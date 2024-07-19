@@ -1,0 +1,15 @@
+flowchart TD
+        A[Start] --> B{Data Collection}
+        B --> C{Define Keywords & Sources}
+        C -->|Public Data Available| D{Data Extraction}
+        C -->|Public Data Not Available| E(Stop)
+        D --> F{Data Preprocessing}
+        F --> G{Model Training}
+        G -->|High Accuracy >90%| H{Software Integration}
+        G -->|Low Accuracy <90%| I{Model Retraining}
+        H --> J{Data Analytics}
+        J --> K{Compare Markets & Products}
+        K --> L(Business Improvement)
+        L -->|Success| M(End)
+        L -->|Failure| I
+        I --> F
